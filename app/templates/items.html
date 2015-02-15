@@ -1,7 +1,12 @@
 {% extends "index.html" %}
 {% block content %}
-    {% for item in clothes %}
-    <h4>{{item.store}}</h4>
-    {% endfor %}
+
+{% for item in clothes %}
+    <div class="item-container">
+        <img src="{{item.imgurl}}"/>
+        <h4>{{item.desc}}</h4>
+        <h2>{{item.price}}</h2>
+    </div>
+{% endfor %}
 {% endblock %}
 
