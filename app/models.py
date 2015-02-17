@@ -1,5 +1,7 @@
 from app import db
 
+# The class model for each clothing item you return to the user
+
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     url = db.Column(db.String(240), index=True, unique=True) 
